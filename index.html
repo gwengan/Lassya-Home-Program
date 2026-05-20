@@ -109,6 +109,9 @@ h3{font-family:'Nunito',sans-serif;font-size:1.05rem;font-weight:700;color:#4a4a
 .review-card h3{color:#4c3bbf;margin-bottom:.6rem}
 .rule-box{background:#f3f0ff;border-radius:10px;border:1.5px solid #c4b5fd;padding:1rem 1.25rem;margin-bottom:1rem}
 .rule-box h4{font-family:'Nunito',sans-serif;font-weight:700;color:#4c3bbf;margin-bottom:.4rem;font-size:.95rem}
+.sp-choice{display:inline-flex;align-items:center;gap:6px;white-space:nowrap;line-height:1.2}
+.sp-choice input{margin:0;flex:0 0 auto}
+@media(max-width:600px){.sp-choice{white-space:normal}}
 @media(max-width:600px){.section{padding:1.25rem}.act-row{grid-template-columns:1fr}.strat-grid{grid-template-columns:1fr}.hero{padding:2.5rem 1.25rem 2.75rem}.hero h1{font-size:1.55rem}.hero p{font-size:14px;max-width:340px}.gloss-row{grid-template-columns:1fr}}
 @media print{body{background:#fff}body *{visibility:hidden!important}#data,#data *{visibility:visible!important}#data{display:block!important;position:absolute;left:0;top:0;width:100%;max-width:none;padding:.5rem;margin:0}.hero,nav,.conf-bar,.sp-note,button,.print-hide{display:none!important}.ds-body,.card{break-inside:avoid}.section:not(#data){display:none!important}}
 </style>
@@ -824,10 +827,10 @@ h3{font-family:'Nunito',sans-serif;font-size:1.05rem;font-weight:700;color:#4a4a
     <table class="dt">
       <thead>
         <tr>
-          <th style="width:24%">Examples of what she said<br><span style="font-weight:400;font-size:11px;opacity:.8">(doesn't need to be everything &mdash; e.g. "Amma, I want, gimme, please" / "I want slime")</span></th>
-          <th style="width:24%">Goal this connects to</th>
-          <th style="width:24%">Prompt level used</th>
-          <th style="width:14%">Spontaneous or prompted?</th>
+          <th style="width:23%">Examples of what she said<br><span style="font-weight:400;font-size:11px;opacity:.8">(doesn't need to be everything &mdash; e.g. "Amma, I want, gimme, please" / "I want slime")</span></th>
+          <th style="width:23%">Goal this connects to</th>
+          <th style="width:22%">Prompt level used</th>
+          <th style="width:18%">Spontaneous or prompted?</th>
           <th>Notes</th>
         </tr>
       </thead>
@@ -852,8 +855,8 @@ h3{font-family:'Nunito',sans-serif;font-size:1.05rem;font-weight:700;color:#4a4a
           </td>
           <td style="vertical-align:middle">
             <div style="display:flex;flex-direction:column;gap:5px;font-size:12.5px">
-              <label><input type="radio" name="sp1"> Spontaneous</label>
-              <label><input type="radio" name="sp1"> Prompted</label>
+              <label class="sp-choice"><input type="radio" name="sp1"> <span>Spontaneous</span></label>
+              <label class="sp-choice"><input type="radio" name="sp1"> <span>Prompted</span></label>
             </div>
           </td>
           <td><span class="wl"></span><span class="wl"></span></td>
@@ -878,8 +881,8 @@ h3{font-family:'Nunito',sans-serif;font-size:1.05rem;font-weight:700;color:#4a4a
           </td>
           <td style="vertical-align:middle">
             <div style="display:flex;flex-direction:column;gap:5px;font-size:12.5px">
-              <label><input type="radio" name="sp2"> Spontaneous</label>
-              <label><input type="radio" name="sp2"> Prompted</label>
+              <label class="sp-choice"><input type="radio" name="sp2"> <span>Spontaneous</span></label>
+              <label class="sp-choice"><input type="radio" name="sp2"> <span>Prompted</span></label>
             </div>
           </td>
           <td><span class="wl"></span><span class="wl"></span></td>
@@ -904,8 +907,8 @@ h3{font-family:'Nunito',sans-serif;font-size:1.05rem;font-weight:700;color:#4a4a
           </td>
           <td style="vertical-align:middle">
             <div style="display:flex;flex-direction:column;gap:5px;font-size:12.5px">
-              <label><input type="radio" name="sp3"> Spontaneous</label>
-              <label><input type="radio" name="sp3"> Prompted</label>
+              <label class="sp-choice"><input type="radio" name="sp3"> <span>Spontaneous</span></label>
+              <label class="sp-choice"><input type="radio" name="sp3"> <span>Prompted</span></label>
             </div>
           </td>
           <td><span class="wl"></span><span class="wl"></span></td>
